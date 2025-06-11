@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Search App</title>
+  <link rel="stylesheet" href="Style-CSS.css" />
+</head>
+<body>
+  <header>
+    <h1>Image Search</h1>
+    <form id="search-form">
+      <input type="text" id="search-input" placeholder="Search for images..." required />
+      <button type="submit">Search</button>
+    </form>
+  </header>
+
+  <main id="gallery" class="image-grid"></main>
+
+  <div id="loader" class="loader hidden"></div>
+  <div id="error-message" class="error hidden">Something went wrong. Please try again.</div>
+
+  <script src="JS.js"></script>
+</body>
+</html>
